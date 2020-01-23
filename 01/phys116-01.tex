@@ -1,0 +1,73 @@
+\documentclass{../phys116}
+
+\title{Homework 1}
+\author{}
+\date{2020 January 27}
+
+\begin{document}
+
+\begin{exercise}[Townsend 1.3, 5 pts]
+  In Problem 3.2 we will see that the state of a spin-\(\frac 1 2\)
+  particle that is spin up along the axis whose direction is specified
+  by the unit vector in spherical coordinates
+  \[
+    \vec n
+    = \sin \theta \cos \phi \, \vec i
+    + \sin \theta \sin \phi \, \vec j
+    + \cos \theta \, \vec k
+  \]
+  with \(\theta\) and \(\phi\) being the familiar spherical
+  coordinates shown in Fig. 1.11, is given by
+  \[
+    \ket{+\vec n}
+    = \cos \frac \theta 2 \, \ket{+\vec z}
+    + e^{i\phi} \sin \frac \theta 2 \, \ket{-\vec z}.
+  \]
+  \begin{problems}
+  \item Verify that the state \(\ket{+\vec n}\) reduces to the states
+    \(\ket{+\vec x}\) and \(\ket{+\vec y}\) given in the chapter for
+    the appropriate choice of the angles \(\theta\) and \(\phi\).
+  \item Suppose that a measurement of \(S_z\) is carried out on a
+    particle in the state \(\ket{+\vec n}\).  What is the probability
+    that the measuremnet yields
+    \begin{enumerate*}[label=(\roman*)]
+    \item \(\hbar/2\)?
+    \item \(-\hbar/2\)?
+    \end{enumerate*}
+  \end{problems}
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+\begin{exercise}[Townsend 1.6+, 5 pts]
+  Show that the state
+  \[
+    \ket{-\vec n}
+    = \sin \frac \theta 2 \, \ket{+\vec z}
+    - e^{i\phi} \cos \frac \theta 2 \, \ket{-\vec z}
+  \]
+  \begin{problems}
+  \item really does correspond to \(\ket{+\vec n}\) with \(\vec n\)
+    pointing in the opposite direction; \label{itm:opposite}
+  \item is normalized such that \(\braket{-\vec n}{-\vec n} = 1\);
+  \item is orthogonal to \(\ket{+\vec n}\).
+  \item Show that as \(3\)-vectors, \((-\vec n) \cdot \vec n = -1\)
+    \label{itm:negdot}.
+  \end{problems}
+  Note that \ref{itm:negdot} is consistent with having the quantum
+  states be orthogonal: \(\braket{-n}{+n} = 0\).  The vector
+  \(\vec n\) lives in physical 3D space whereas \(\ket{\vec n}\) lives
+  in a 2D abstract ``Hilbert'' space.  The states \(\ket{\vec n}\) and
+  \(\ket{-\vec n}\) are orthogonal because they give two different,
+  definite, and mutually exclusive results when their spin is measured
+  along the \(\vec n\) direction.
+
+  \textit{Hint for part \ref{itm:opposite}: How shsould you change the
+    polar angle to get a vector pointing in the opposite direction?}
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+\end{document}
