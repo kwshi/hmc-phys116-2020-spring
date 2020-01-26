@@ -138,7 +138,7 @@
 
 \DeclarePairedDelimiter{\ket}{\lvert}{\rangle}
 \DeclarePairedDelimiter{\bra}{\langle}{\rvert}
-\DeclarePairedDelimiterX{\braket}[2]{\langle}{\rvert}{#1 \delimsize\vert #2}
+\DeclarePairedDelimiterX{\braket}[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
 
 \DeclarePairedDelimiter{\cbr}{\{}{\}}
 \DeclarePairedDelimiter{\set}{\{}{\}}
