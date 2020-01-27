@@ -130,10 +130,14 @@
 \newcommand{\pdrv}[3][]{\frac{\pdif^{#1} #2}{\pdif #3^{#1}}}
 
 \DeclareMathOperator{\diam}{diam}
+\let\Re\relax
+\let\Im\relax
+\DeclareMathOperator{\Re}{Re}
+\DeclareMathOperator{\Im}{Im}
 
 \DeclarePairedDelimiter{\ket}{\lvert}{\rangle}
 \DeclarePairedDelimiter{\bra}{\langle}{\rvert}
-\DeclarePairedDelimiterX{\braket}[2]{\langle}{\rangle}{#1 \delimsize\vert #2}
+\DeclarePairedDelimiterX{\braket}[2]{\langle}{\rangle}{{#1} \delimsize\vert {#2}}
 
 \DeclarePairedDelimiter{\cbr}{\{}{\}}
 \DeclarePairedDelimiter{\set}{\{}{\}}
