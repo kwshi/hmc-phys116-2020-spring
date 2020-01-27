@@ -60,6 +60,7 @@
 \RequirePackage{mdframed}
 
 \mdfdefinestyle{exercise}{
+  skipabove=\parskip,
   linecolor=gray,
   topline=false,
   leftline=false,
@@ -70,11 +71,13 @@
   innerbottommargin=\parskip,
 }
 
-\declaretheorem[
-  numbered=no,
-  mdframed={style=exercise},
-]{exercise}
-%\newmdenv[style=exercise]{exercise}
+%\declaretheoremstyle[
+%  numbered=no,
+%  mdframed={style=exercise},
+%]{exercise}
+%
+%\declaretheorem[style=exercise]{exercise}
+\newenvironment{exercise}[1][]{\paragraph{#1}\begin{mdframed}[style=exercise]}{\end{mdframed}}
 
 \mdfdefinestyle{solution}{
   skipabove=\parskip,
@@ -108,6 +111,8 @@
 \newlist{problems}{enumerate}{3}
 \setlist[problems, 1]{label=(\alph*)}
 \setlist[problems, 2]{label=(\roman*)}
+
+\RequirePackage{siunitx}
 
 %
 \newcommand{\QQ}{\mathbb Q}
