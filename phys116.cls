@@ -53,16 +53,6 @@
 
 \RequirePackage{qcircuit}
 
-\RequirePackage{tikz}
-\RequirePackage{pgfplots}
-
-\usetikzlibrary{arrows.meta}
-\usetikzlibrary{calc}
-\usetikzlibrary{positioning}
-
-\pgfplotsset{compat=1.16}
-\usepgfplotslibrary{patchplots}
-
 \RequirePackage{parskip}
 
 \RequirePackage{hyperref}
@@ -153,3 +143,30 @@
 
 \renewcommand{\vec}{\mathbfit}
 \newcommand{\mat}{\mathbf}
+
+\RequirePackage{tikz}
+\RequirePackage{tikz-3dplot}
+\RequirePackage{pgfplots}
+
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{calc}
+\usetikzlibrary{angles}
+\usetikzlibrary{3d}
+\usetikzlibrary{positioning}
+
+\pgfplotsset{compat=1.16}
+\usepgfplotslibrary{patchplots}
+
+\tikzset{
+  vector/.style={
+    arrows={-Stealth[length=1em/2]},
+    thick,
+  },
+  annotation/.style={
+    opacity=1/2,
+  },
+  guide/.style={
+    annotation,
+    densely dotted,
+  },
+}
