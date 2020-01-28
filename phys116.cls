@@ -113,6 +113,11 @@
 \setlist[problems, 2]{label=(\roman*)}
 
 \RequirePackage{siunitx}
+\AtBeginDocument{
+  \sisetup{
+    math-rm=\mathrm,
+  }
+}
 
 %
 \newcommand{\QQ}{\mathbb Q}
