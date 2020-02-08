@@ -115,6 +115,8 @@
 \RequirePackage{siunitx}
 \AtBeginDocument{
   \sisetup{
+    mode=math,
+    text-rm=\rmfamily,
     math-rm=\mathrm,
   }
 }
