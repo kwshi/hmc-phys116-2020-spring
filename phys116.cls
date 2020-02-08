@@ -136,6 +136,8 @@
 \newcommand{\drv}[3][]{\frac{\dif^{#1} #2}{\dif #3^{#1}}}
 \newcommand{\pdrv}[3][]{\frac{\pdif^{#1} #2}{\pdif #3^{#1}}}
 
+\newcommand{\SG}{\mathrm{SG}}
+
 \DeclareMathOperator{\diam}{diam}
 \let\Re\relax
 \let\Im\relax
