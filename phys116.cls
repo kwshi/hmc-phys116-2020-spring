@@ -51,6 +51,10 @@
 \RequirePackage{centernot}
 \RequirePackage{cancel}
 
+\RequirePackage{tabularx}
+\RequirePackage{array}
+\RequirePackage{booktabs}
+
 \RequirePackage{qcircuit}
 
 \RequirePackage{parskip}
