@@ -151,6 +151,8 @@
 \DeclarePairedDelimiter{\ket}{\lvert}{\rangle}
 \DeclarePairedDelimiter{\bra}{\langle}{\rvert}
 \DeclarePairedDelimiterX{\braket}[2]{\langle}{\rangle}{{#1} \delimsize\vert {#2}}
+\DeclarePairedDelimiterX{\ketbra}[2]{\lvert}{\rvert}{{#1} \delimsize\rangle\delimsize\langle {#2}}
+\newcommand{\proj}[1]{\ketbra{#1}{#1}}
 
 \DeclarePairedDelimiter{\cbr}{\{}{\}}
 \DeclarePairedDelimiter{\set}{\{}{\}}
