@@ -1,0 +1,175 @@
+\documentclass{../phys116}
+
+\title{Homework 7}
+\author{}
+\date{2020 March 9}
+
+\begin{document}
+
+\begin{exercise}[Townsend 5.21 (5 pts)]
+  The density matrix for an ensemble of spin-\(\frac 1 2\) particles
+  in the \(S_z\) basis is
+  \[
+    \hat \rho \xrightarrow[\text{\(S_z\) basis}]{}
+    \begin{bmatrix} \frac 1 4  & n \\ n^* & p \end{bmatrix}.
+  \]
+  \begin{problems}
+  \item What value must \(p\) have?  Why?
+  \item What value(s) must \(n\) have for the density matrix to
+    represent a pure state?
+  \item What pure state is represented when \(n\) takes its maximum
+    possible real value?  Express your answer in terms of the state
+    \(\ket{+\vec n}\) given in Problem 5.19.
+  \end{problems}
+\end{exercise}
+
+\begin{solution}
+  \begin{problems}
+  \item
+  \item
+  \item
+  \end{problems}
+\end{solution}
+
+\begin{exercise}[Townsend 6.1 (5 pts)]
+  \begin{problems}
+  \item Use induction to show that
+    \([\hat x^n, \hat p_x] = i \hbar n \hat x^{n-1}\).
+    \textit{Suggestion}: Take advantage of the commutation relation
+    \([\hat A \hat B, \hat C] = \hat A [\hat B, \hat C] + [\hat A,
+    \hat C] \hat B\) in working out the commutators.
+  \item Using the expansion
+    \[
+      F(x)
+      = F(0)
+      + \prn*{\drv F x}_{x=0} x
+      + \frac{1}{2!} \prn*{\drv[2] F x}_{x=0} x^2 + \dots
+      + \frac{1}{n!} \prn*{\drv[n] F x}_{x=0} x^n + \dots,
+    \]
+    show that
+    \[
+      [F(\hat x), \hat p_x] = i \hbar \, \pdrv F x (\hat x).
+    \]
+  \item For the one-dimensional Hamiltonian
+    \[
+      \hat H = \frac{\hat p_x^2}{2m} + V(\hat x)
+    \]
+    show that
+    \[
+      \drv{\abr{p_x}}{t} = \abr*{-\drv V x}.
+    \]
+  \end{problems}
+\end{exercise}
+
+\begin{solution}
+  \begin{problems}
+  \item
+  \item
+  \item
+  \end{problems}
+\end{solution}
+
+\begin{exercise}[Townsend 6.2 (5 pts)]
+  Show that
+  \[
+    \bra p \hat x \ket \psi = i \hbar \, \pdrv{}{p} \braket p \psi
+  \]
+  and
+  \[
+    \bra \varphi \hat x \ket \psi
+    = \int \dif p \braket p \varphi^*
+    i \hbar \, \pdrv{}{p} \braket p \psi.
+  \]
+  What do these results suggest for how you should represent the
+  position operator in momentum space?
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+\begin{exercise}[Townsend 6.4 (5 pts)]
+  \begin{problems}
+  \item Show for a free particle of mass \(m\) initially in the state
+    \[
+      \psi(x) = \braket x \psi
+      = \frac{1}{\sqrt{\sqrt \pi a}} \, e^{-x^2/2a^2}
+    \]
+    that
+    \[
+      \psi(x, t) = \braket{x}{\psi(t)}
+      = \frac{1}{\sqrt{\sqrt \pi (a + i \hbar t/m a)}}
+      \, e^{-\frac{1}{2 (1 + i \hbar t/m a)} \frac{x^2}{a^2}}
+    \]
+    and therefore
+    \[
+      \Delta x = \frac{a}{\sqrt 2}
+      \sqrt{1 + \prn*{\frac{\hbar t}{m a^2}}^2}.
+    \]
+    \textit{Suggestion}: Start with (6.75) and take advantage of the
+    Gaussian integral (D.7), but in momentum space instead of position
+    space.
+  \item What is \(\Delta p\), at time \(t\)?  \textit{Suggestion}: Use
+    the momentum-space wave function to evaluate \(\Delta p_x\).
+  \end{problems}
+\end{exercise}
+
+\begin{solution}
+  \begin{problems}
+  \item
+  \item
+  \end{problems}
+\end{solution}
+
+\begin{exercise}[Townsend 6.5 (5 pts)]
+  Consider a wave packet defined by
+  \[
+    \braket p \psi =
+    \begin{cases}
+      0 & p < -\frac P 2, \\
+      N & -\frac P 2 < p < \frac P 2, \\
+      0 & p > \frac P 2.
+    \end{cases}
+  \]
+  \begin{problems}
+  \item Determine a value for \(N\) such that
+    \(\braket \psi \psi = 1\) using the momentum-space wave function
+    directly.
+  \item Determine \(\braket x \psi = \psi(x)\).
+  \item Sketch \(\braket p \psi\) and \(\braket x \psi\).  Use
+    reasonable estimates of \(\Delta p_x\) from the form of
+    \(\braket p \psi\) and \(\Delta x\) from the form of
+    \(\braket x \psi\) to estimate the product
+    \(\Delta x \Delta p_x\).  Check that your result is independent of
+    the value of \(P\).  \textit{Note}: Simply estimate rather than
+    actually calculcate the uncertainties.
+  \end{problems}
+\end{exercise}
+
+\begin{solution}
+  \begin{problems}
+  \item
+  \item
+  \item
+  \end{problems}
+\end{solution}
+
+\begin{exercise}[Townsend 6.20 (5 pts)]
+  Normalize the wave function
+  \[
+    \braket x \psi =
+    \begin{cases}
+      N e^{-\kappa x} & x > 0, \\
+      N e^{\kappa x} & x < 0.
+    \end{cases}
+  \]
+  Determine the probability that a measurement of the momentum \(p\)
+  finds the momentum between \(p\) and \(p + \dif p\) for this wave
+  function.  \textit{Note}: This wave function is the energy
+  eigenfunction for the delta function potential energy well of
+  Problem 6.19.
+\end{exercise}
+
+\begin{solution}
+\end{solution}
+
+\end{document}
