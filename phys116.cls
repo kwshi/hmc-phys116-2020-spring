@@ -143,6 +143,7 @@
 \newcommand{\SG}{\mathrm{SG}}
 
 \DeclareMathOperator{\diam}{diam}
+\DeclareMathOperator{\tr}{tr}
 \let\Re\relax
 \let\Im\relax
 \DeclareMathOperator{\Re}{Re}
@@ -153,6 +154,10 @@
 \DeclarePairedDelimiterX{\braket}[2]{\langle}{\rangle}{{#1} \delimsize\vert {#2}}
 \DeclarePairedDelimiterX{\ketbra}[2]{\lvert}{\rvert}{{#1} \delimsize\rangle\delimsize\langle {#2}}
 \newcommand{\proj}[1]{\ketbra{#1}{#1}}
+\newcommand{\projvec}[2]{\proj{#1 \vec{#2}}}
+\newcommand{\ketvec}[2]{\ket{#1 \vec{#2}}}
+\newcommand{\bravec}[2]{\bra{#1 \vec{#2}}}
+\newcommand{\braketvec}[4]{\braket{#1 \vec{#2}}{#3 \vec{#4}}}
 
 \DeclarePairedDelimiter{\cbr}{\{}{\}}
 \DeclarePairedDelimiter{\set}{\{}{\}}
@@ -192,5 +197,9 @@
   guide/.style={
     annotation,
     densely dotted,
+  },
+  measure/.style={
+    annotation,
+    <->,
   },
 }
