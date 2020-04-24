@@ -63,6 +63,10 @@
 
 \RequirePackage{mdframed}
 
+\RequirePackage{mhchem}
+\mhchemoptions{mathfontcommand=\mathrm}
+\mhchemoptions{textfontcommand=\rmfamily}
+
 \mdfdefinestyle{exercise}{
   skipabove=\parskip,
   linecolor=gray,
