@@ -1,0 +1,135 @@
+\documentclass {../phys116}
+
+\title {Homework 11}
+\author {Kye W. Shi}
+\date {2020 May 4}
+
+\begin {document}
+
+\begin {exercise} [Townsend 10.19 (5 pts)]
+  The Hamiltonian for two spin-\(\frac 1 2\) particles, one with mass
+  \(m_1\) and the other with mass \(m_2\), is given by
+  \[
+    \hat H
+    = \frac {\hat {\vec p}_1^2} {2 m_1}
+    + \frac {\hat {\vec p}_2^2} {2 m_2}
+    + V_a (\abs {\hat {\vec r}})
+    + \prn* {
+      \frac 1 4
+      - \frac {\hat {\vec S}_1 \cdot \hat {\vec S}_2} {\hbar^2}
+    }
+    V_b (\abs {\hat {\vec r}})
+  \]
+  where \(\hat {\vec r} = \hat {\vec r}_1 - \hat {\vec r}_2\) and
+  \[
+    V_a(r) =
+    \begin {cases}
+      0 & r < a, \\
+      V_0 & r > a,
+    \end {cases}
+    \qquad
+    V_b(r) =
+    \begin {cases}
+      0 & r < b, \\
+      V_0 & r > b,
+    \end {cases}
+  \]
+  with \(b < a\) and \(V_0\) very large and positive.
+  \begin {problems}
+  \item Determine the normalized position-space energy eigenfunction
+    for the ground state.  What is the spin state of the ground state?
+    What is the degeneracy?  \textit {Note}: Take \(V_0\) to be
+    infinite.
+  \item What can you say about the energy and spin state of the
+    first-excited state?  Does your result depend on how much larger
+    \(a\) is than \(b\)?  Explain.
+  \end {problems}
+
+  \textit {Suggestions}: Recall from Chapter 5 that the states of
+  total spin are eigenstates of
+  \(\hat {\vec S}_1 \cdot \hat {\vec S}_2\).  For spin-\(\frac 1 2\)
+  particles we found that
+  \begin {align*}
+    \hat {\vec S}_1 \cdot \hat {\vec S}_2 \ket {s = 1, m} &= \frac {\hbar^2} 4, \\
+    \hat {\vec S}_1 \cdot \hat {\vec S}_2 \ket {s = 0, 0} &= -\frac {3 \hbar^2} 4.
+  \end {align*}
+  Also, it may be useful to move to the center of mass frame and
+  express the Hamiltonian in terms of \(\hat {\vec p}\) and
+  \(\hat {\vec r}\), as we first did at the end of Lecture 17.
+\end {exercise}
+
+\begin {solution}
+  \begin {problems}
+  \item
+  \end {problems}
+\end {solution}
+
+\begin {exercise} [Townsend 11.1 (5 pts)]
+  Consider a perturbation \(\hat H_1 = b \hat x^4\) to the simple
+  harmonic oscillator Hamiltonian
+  \[
+    \hat H_0
+    = \frac {\hat p_x^2} {2 m}
+    + \frac 1 2 m \omega^2 \hat x^2.
+  \]
+  This is an example of an anharmonic oscillator, one with a nonlinear
+  restoring force.
+  \begin {problems}
+  \item Show that the first-order shift in the energy is given by
+    \[
+      E_n^{(1)} = \frac 3 4 \frac {\hbar^2 b} {m^2 \omega^2} (1 + 2 n + 2 n^2).
+    \]
+  \item Argue that no matter how small \(b\) is, the perturbation
+    expansion will break down for some sufficiently large \(n\).  What
+    is the physical reason?
+  \end {problems}
+\end {exercise}
+
+\begin {solution}
+
+\end {solution}
+
+\begin {exercise} [Townsend 11.4 (5 pts)]
+  Calculate the first-order shift to the energy of the ground state
+  and first-excited state of a particle of mass \(m\) in the
+  one-dimensional infinite square well
+  \[
+    V(x) =
+    \begin {cases}
+      0 & 0 < x < L, \\
+      \infty & \text {elsewhere}.
+    \end {cases}
+  \]
+  of
+  \begin {problems}
+  \item the constant perturbation \(\hat H_1 = V_1\) and
+  \item the linearly increasing perturbation
+    \(\hat H_1 = \epsilon E_1^{(0)} \hat x / L\), where \(E_1^{(0)}\)
+    is the unperturbed energy of the ground state and
+    \(\epsilon \ll 1\).
+  \end {problems}
+\end {exercise}
+
+\begin {solution}
+
+\end {solution}
+
+\begin {exercise} [Townsend 11.15 (5 pts)]
+  Determine the effect of an external magnetic field on the energy
+  levels of the \(n=2\) state of hydrogen when the applied magnetic
+  field \(B\) has a magnitude much greater than \SI {e4} {gauss}, in
+  which case the spin-orbit interaction may be neglected as a first
+  approximation.  This is the \textbf {Pashen-Bach effect}.
+
+  Draw an energy-splitting diagram like Figure 11.10.
+
+  \textit {Hint}: Unlike most of the section on the Zeeman Effect, you
+  can start with the (11.105) form rather than the (11.106) form of
+  the perturbing Hamiltonian.
+\end {exercise}
+
+\begin {solution}
+
+\end {solution}
+
+\end {document}

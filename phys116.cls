@@ -124,6 +124,7 @@
 \AtBeginDocument{
   \sisetup{
     mode=math,
+    per-mode=symbol,
     text-rm=\rmfamily,
     math-rm=\mathrm,
   }
