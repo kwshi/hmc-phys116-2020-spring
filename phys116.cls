@@ -187,6 +187,10 @@
 \usetikzlibrary{angles}
 \usetikzlibrary{3d}
 \usetikzlibrary{positioning}
+\usetikzlibrary{decorations}
+\usetikzlibrary{decorations.markings}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.pathreplacing}
 
 \pgfplotsset{compat=1.16}
 \usepgfplotslibrary{patchplots}
